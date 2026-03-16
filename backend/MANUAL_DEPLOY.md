@@ -1,5 +1,8 @@
 # Directus CMS 手动部署指南
 
+> 说明：这是历史/备用方案文档，用于记录曾考虑过的 Directus 部署路线，不代表当前生产主链路。
+
+
 ## 🎯 部署目标
 
 在 muyirunner.icu 服务器上部署轻量级 Directus CMS
@@ -85,7 +88,7 @@ SECRET="another-secret-key-replace-in-production"
 
 # 管理员账号
 ADMIN_EMAIL="admin@muyirunner.icu"
-ADMIN_PASSWORD="Admin123456"
+ADMIN_PASSWORD="your-admin-password"
 
 # 服务器配置
 PORT=8055
@@ -247,7 +250,7 @@ https://muyirunner.icu/admin
 
 **登录信息**：
 - Email: `admin@muyirunner.icu`
-- Password: `Admin123456`
+- Password: `your-admin-password`
 
 ### 2. 测试 API
 
