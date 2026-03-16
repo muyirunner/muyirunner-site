@@ -9,7 +9,7 @@
 - `index.html`、`vite.config.ts`、`tailwind.config.js`: 前端构建入口与配置。
 - `deploy.*`、`deploy-scp.sh`、`deploy.sh`、`check-deploy.sh`: 当前部署脚本，保留在根目录，避免影响既有部署习惯。
 - `nginx.conf`: 当前站点 Nginx 配置模板。
-- `database/supabase/`: Supabase 初始化与补丁 SQL。
+- `database/supabase/`: Supabase 初始化、补丁 SQL，以及生产基线说明。入口文档见 `database/supabase/README.md`。
 
 ## 文档归档
 

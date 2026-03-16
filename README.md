@@ -8,6 +8,13 @@
 
 - **个人网站**：<http://www.muyirunner.icu>
 
+## 📁 项目说明
+
+- 当前目录结构说明：`docs/PROJECT_STRUCTURE.md`
+- 补充文档已归档到 `docs/`
+- Supabase SQL 已归档到 `database/supabase/`
+- Supabase 生产基线与漂移说明：`database/supabase/README.md`
+
 ## 📌 项目定位
 
 这个项目不仅是一个简历网站，也是我的个人展示入口。它承担了几个角色：
