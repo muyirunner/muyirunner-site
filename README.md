@@ -1,64 +1,66 @@
-# 个人简历/作品集网站 ✨
+# muyirunner-site
 
-基于 Vue3 + Vite + TypeScript + Tailwind CSS 构建的**高颜值、现代化**个人简历网站。
+我的个人网站与在线作品集，在线演示：**[www.muyirunner.icu](http://www.muyirunner.icu)**
 
-## 📁 项目说明
+这是一个基于 **Vue 3 + Vite + TypeScript + Tailwind CSS** 构建的个人网站项目，主要用于展示我的个人信息、项目经历、作品集内容，并结合 **Supabase** 与 **AI 能力** 做进一步扩展。
 
-- 当前目录结构说明：`docs/PROJECT_STRUCTURE.md`
-- 补充文档已归档到 `docs/`
-- Supabase SQL 已归档到 `database/supabase/`
+## 🌐 在线演示
 
-## 🎉 v2.0 全新升级
+- **个人网站**：<http://www.muyirunner.icu>
 
-全面视觉美化，科技感十足的深色主题，毛玻璃质感卡片，动态粒子背景！
+## 📌 项目定位
+
+这个项目不仅是一个简历网站，也是我的个人展示入口。它承担了几个角色：
+
+- 展示个人简介、技能和经历
+- 作为项目作品集的统一入口
+- 承载个人品牌与风格表达
+- 预留内容管理、数据服务与 AI 功能扩展空间
 
 ## ✨ 核心特性
 
-### 🎨 视觉设计
-- **深蓝黑渐变背景**：营造专业科技感
-- **Glassmorphism**：毛玻璃质感卡片
-- **动态粒子背景**：浮动粒子 + 渐变光晕
-- **电蓝色点缀**：`#00d4ff` 主色调带发光效果
-- **渐变装饰**：标题装饰线、按钮扫光效果
-- **丰富动画**：视口进入淡入、Hover 缩放、Ripple 涟漪
+- **现代化个人主页**：基于 Vue 3 + Vite 构建，界面简洁、响应式友好
+- **作品集展示**：集中展示项目、技术栈和个人经历
+- **Tailwind CSS 视觉系统**：支持高颜值、统一风格的界面设计
+- **深浅色主题**：支持主题切换与偏好记忆
+- **PDF 简历下载**：支持简历文件下载与打印优化
+- **数据驱动内容管理**：页面内容集中维护，便于持续更新
+- **可扩展后端能力**：已预留 Supabase、数据库和部署脚本，方便继续扩展
 
-### 🌓 主题系统
-- **深色/浅色模式**：跟随系统或手动切换
-- **平滑过渡**：主题切换流畅自然
-- **LocalStorage 记忆**：保存用户偏好
+## 🛠 Tech Stack
 
-### 📱 响应式设计
-- **完美适配**：手机、平板、桌面
-- **触摸优化**：移动端交互友好
-- **自适应布局**：Grid + Flexbox
+### Frontend
+- Vue 3
+- Vite
+- TypeScript
+- Tailwind CSS
 
-### 📄 文档功能
-- **PDF 下载**：✅ **已修复页面跳转问题**，使用隐藏 a 标签下载
-- **打印优化**：A4 纸张布局，隐藏装饰元素
-- **一键复制**：邮箱/微信/电话复制到剪贴板
+### Backend / Service
+- Supabase
+- 自定义部署脚本
+- Nginx 部署配置
 
-### ⚡ 性能优化
-- **按需加载**：CSS Tree-shaking
-- **代码分割**：Vite 自动优化
-- **动画优化**：尊重用户减少动画偏好
-- **粒子禁用**：低端设备自动关闭粒子效果
+### Tooling
+- npm
+- PostCSS
+- Shell / PowerShell / Batch 部署脚本
 
-### ♿ 无障碍
-- **语义化 HTML**：正确的标签使用
-- **键盘导航**：所有交互支持键盘
-- **Focus 样式**：清晰的焦点指示
-- **颜色对比**：WCAG AA 标准
+## 📂 项目结构
 
-### 🔍 SEO 优化
-- **Meta 标签**：完整的 title、description、OG
-- **结构化数据**：Person Schema
-- **Sitemap**：搜索引擎索引
-- **Robots.txt**：爬虫规则
-
-### 📦 数据驱动
-- **内容分离**：所有数据在 `src/data/resume.ts`
-- **组件复用**：高度模块化
-- **易于维护**：改数据不改代码
+```text
+muyirunner-site/
+├── src/                    # 前端源码
+├── public/                 # 静态资源
+├── backend/                # 后端扩展目录
+├── database/               # 数据库相关文件
+├── docs/                   # 补充文档
+├── README.md               # 项目说明
+├── QUICK_START.md          # 快速开始
+├── DEVELOPMENT.md          # 开发文档
+├── DEPLOY.md               # 部署文档
+├── nginx.conf              # Nginx 配置示例
+└── deploy*.sh / ps1 / bat  # 多平台部署脚本
+```
 
 ## 🚀 快速开始
 
@@ -69,19 +71,14 @@
 
 ### 本地运行
 
-1. 安装依赖：
-
 ```bash
 npm install
-```
-
-2. 启动开发服务器：
-
-```bash
 npm run dev
 ```
 
-3. 在浏览器中打开 `http://localhost:5173`
+启动后访问：
+
+- `http://localhost:5173`
 
 ### 构建生产版本
 
@@ -89,248 +86,34 @@ npm run dev
 npm run build
 ```
 
-构建完成后，所有静态文件将生成在 `dist` 目录中。
+## 📝 内容维护
 
-## 📝 内容更新
+项目内容主要通过数据文件统一管理，便于后续持续维护与更新。
 
-所有简历内容都在 [src/data/resume.ts](src/data/resume.ts) 中管理。修改此文件即可更新页面内容，无需修改组件代码。
+如果你想修改站点展示内容，建议优先查看：
 
-### 更新步骤
+- `src/`
+- `docs/`
+- `QUICK_START.md`
+- `DEVELOPMENT.md`
 
-1. 编辑 `src/data/resume.ts`
-2. 更新个人信息、经历、项目等内容
-3. 替换 `public/resume.pdf` 为你的真实简历 PDF
-4. （可选）在 `public/projects/` 中添加项目图片
-5. 重新构建项目
+## 🚀 部署说明
 
-## 🌐 部署到 Ubuntu + Nginx
+项目已提供完整部署文档与多平台脚本，可用于快速部署到 Ubuntu + Nginx 等环境。
 
-### 方法一：手动部署
+相关文件：
 
-1. **构建项目**：
+- `DEPLOY.md`
+- `deploy.sh`
+- `deploy.ps1`
+- `deploy.bat`
+- `nginx.conf`
 
-```bash
-npm run build
-```
+## 📎 Related Links
 
-2. **上传到服务器**：
-
-使用 SCP 或 SFTP 将 `dist` 目录的内容上传到服务器：
-
-```bash
-scp -r dist/* user@muyiRunner.icu:/var/www/html/
-```
-
-或使用 rsync：
-
-```bash
-rsync -avz --delete dist/ user@muyiRunner.icu:/var/www/html/
-```
-
-3. **配置 Nginx**：
-
-在服务器上编辑 Nginx 配置文件（通常在 `/etc/nginx/sites-available/default`）：
-
-```nginx
-server {
-    listen 80;
-    server_name muyiRunner.icu www.muyiRunner.icu;
-
-    root /var/www/html;
-    index index.html;
-
-    # Gzip 压缩
-    gzip on;
-    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
-    gzip_min_length 1000;
-
-    # 单页应用路由配置
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-
-    # 静态资源缓存
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ {
-        expires 1y;
-        add_header Cache-Control "public, immutable";
-    }
-
-    # PDF 文件
-    location ~* \.pdf$ {
-        expires 30d;
-        add_header Cache-Control "public";
-    }
-}
-```
-
-4. **重启 Nginx**：
-
-```bash
-sudo nginx -t  # 测试配置
-sudo systemctl reload nginx
-```
-
-### 方法二：使用脚本自动部署
-
-创建部署脚本 `deploy.sh`：
-
-```bash
-#!/bin/bash
-
-# 构建
-echo "Building..."
-npm run build
-
-# 上传
-echo "Uploading..."
-rsync -avz --delete dist/ user@muyiRunner.icu:/var/www/html/
-
-# 重启 Nginx（如果需要）
-# ssh user@muyiRunner.icu "sudo systemctl reload nginx"
-
-echo "Deployment completed!"
-```
-
-使用：
-
-```bash
-chmod +x deploy.sh
-./deploy.sh
-```
-
-### HTTPS 配置（推荐）
-
-使用 Let's Encrypt 免费证书：
-
-```bash
-# 安装 Certbot
-sudo apt update
-sudo apt install certbot python3-certbot-nginx
-
-# 获取证书并自动配置 Nginx
-sudo certbot --nginx -d muyiRunner.icu -d www.muyiRunner.icu
-
-# 证书自动续期
-sudo certbot renew --dry-run
-```
-
-## 📁 项目结构
-
-```
-my-resume-site/
-├── public/
-│   ├── resume.pdf              # 简历 PDF（需替换）
-│   └── projects/               # 项目图片目录
-├── src/
-│   ├── assets/
-│   │   └── styles/
-│   │       └── print.css       # 打印样式
-│   ├── components/             # 可复用组件
-│   │   ├── Button.vue
-│   │   ├── Card.vue
-│   │   ├── Chip.vue
-│   │   ├── CopyButton.vue
-│   │   ├── Navbar.vue
-│   │   ├── ProjectCard.vue
-│   │   ├── ScrollToTop.vue
-│   │   ├── SkillGroup.vue
-│   │   ├── ThemeToggle.vue
-│   │   ├── Timeline.vue
-│   │   └── TimelineItem.vue
-│   ├── composables/            # 可组合函数
-│   │   ├── useIntersectionObserver.ts
-│   │   ├── useScrollSpy.ts
-│   │   └── useTheme.ts
-│   ├── data/
-│   │   └── resume.ts           # 简历数据（核心配置）
-│   ├── sections/               # 页面区块
-│   │   ├── About.vue
-│   │   ├── Awards.vue
-│   │   ├── Contact.vue
-│   │   ├── Experience.vue
-│   │   ├── Hero.vue
-│   │   ├── Projects.vue
-│   │   └── Skills.vue
-│   ├── types/
-│   │   └── index.ts            # TypeScript 类型定义
-│   ├── App.vue                 # 主应用
-│   ├── main.ts                 # 入口文件
-│   └── style.css               # 全局样式
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-```
-
-## 🎨 自定义样式
-
-### 修改主题色
-
-编辑 [tailwind.config.js](tailwind.config.js)：
-
-```javascript
-colors: {
-  accent: {
-    DEFAULT: '#00d4ff',  // 修改为你喜欢的颜色
-    dark: '#00b8e6'
-  }
-}
-```
-
-### 修改字体
-
-编辑 [tailwind.config.js](tailwind.config.js) 中的 `fontFamily` 配置。
-
-## 🛠️ 技术栈
-
-- **框架**：Vue 3 (Composition API)
-- **构建工具**：Vite
-- **语言**：TypeScript
-- **样式**：Tailwind CSS
-- **图标**：内联 SVG
-
-## 📦 依赖说明
-
-项目依赖精简，仅包含必要的包：
-
-- `vue`: Vue 3 框架
-- `vite`: 构建工具
-- `typescript`: TypeScript 支持
-- `tailwindcss`: CSS 框架
-- `autoprefixer`: CSS 兼容性
-- `postcss`: CSS 处理
-
-## 🔧 常见问题
-
-### 1. 构建后图片不显示
-
-确保图片放在 `public` 目录下，并使用绝对路径引用（如 `/projects/image.jpg`）。
-
-### 2. PDF 下载 404
-
-确保 `public/resume.pdf` 文件存在。
-
-### 3. 部署后样式错误
-
-检查 Nginx 配置，确保正确设置 MIME 类型。
-
-### 4. 深色模式不生效
-
-清除浏览器 localStorage 中的 `theme` 键。
-
-## 📄 License
-
-MIT License
-
-## 👤 作者
-
-杨汶川
-- 邮箱：641339238@qq.com
-- 电话：133-2576-6744
-- 微信：ywczwfdcai
+- **Website**: <http://www.muyirunner.icu>
+- **GitHub Profile**: <https://github.com/muyirunner>
 
 ---
 
-如有问题或建议，欢迎联系！
+这是我持续维护中的个人网站项目，也是我公开展示作品与技术方向的主要入口。
