@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": "welcome-to-my-blog",
+      "title": "欢迎来到我的博客",
+      "description": "这是我的第一篇博客文章，介绍了这个网站的由来和技术栈。",
+      "author": "杨汶川",
+      "date": "2025-12-26",
+      "category": "随笔",
+      "tags": [
+        "开始",
+        "介绍"
+      ],
+      "readTime": 3,
+      "cover": "/blog-static/images/welcome.jpg",
+      "file": "/blog-static/posts/welcome-to-my-blog.md"
+    },
+    {
+      "id": "my-first-marathon",
+      "title": "我的第一次马拉松",
+      "description": "记录我人生第一次完成全程马拉松的经历和感受。",
+      "author": "杨汶川",
+      "date": "2025-12-20",
+      "category": "跑步",
+      "tags": [
+        "马拉松",
+        "运动",
+        "挑战"
+      ],
+      "readTime": 8,
+      "cover": "/blog-static/images/marathon.jpg",
+      "file": "/blog-static/posts/my-first-marathon.md"
+    },
+    {
+      "id": "vue3-composition-api",
+      "title": "Vue 3 Composition API 实战",
+      "description": "深入探讨 Vue 3 Composition API 的使用技巧和最佳实践。",
+      "author": "杨汶川",
+      "date": "2025-12-15",
+      "category": "技术",
+      "tags": [
+        "Vue",
+        "前端",
+        "JavaScript"
+      ],
+      "readTime": 12,
+      "cover": "/blog-static/images/vue3.jpg",
+      "file": "/blog-static/posts/vue3-composition-api.md"
+    }
+  ]
+}
