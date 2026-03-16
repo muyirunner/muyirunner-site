@@ -1,8 +1,16 @@
 // Supabase 客户端配置
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = 'https://bioiuugzafoltdbwzpic.supabase.co'
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpb2l1dWd6YWZvbHRkYnd6cGljIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAyNjA4MDAsImV4cCI6MjA4NTgzNjgwMH0.44-g0xXyWXGjdlaPs5YGCuJ1c-enwRViuMtz3uw_r2I'
+const requireEnv = (name: keyof ImportMetaEnv) => {
+    const value = import.meta.env[name]
+    if (!value) {
+        throw new Error(`Missing required environment variable: ${name}`)
+    }
+    return value
+}
+
+const supabaseUrl = requireEnv('VITE_SUPABASE_URL')
+const supabaseAnonKey = requireEnv('VITE_SUPABASE_ANON_KEY')
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 

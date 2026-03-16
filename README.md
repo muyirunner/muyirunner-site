@@ -78,6 +78,12 @@ muyirunner-site/
 
 ### 本地运行
 
+先复制环境变量模板并填入你自己的配置：
+
+```bash
+cp .env.example .env
+```
+
 ```bash
 npm install
 npm run dev

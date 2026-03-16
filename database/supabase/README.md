@@ -11,7 +11,7 @@
 
 ## 已确认的线上生产状态
 
-项目 `bioiuugzafoltdbwzpic` 的线上 production 已确认包含：
+当前线上 production 已确认包含：
 
 - `public.blog_posts`
 - `public.comments`
@@ -26,9 +26,7 @@
 
 - `wallpaper_config`
 
-Storage 当前至少包含 1 个 bucket：
-
-- `yangwenchuan's net picture`
+Storage 当前至少包含 1 个 bucket。
 
 ## 当前最重要的漂移点
 

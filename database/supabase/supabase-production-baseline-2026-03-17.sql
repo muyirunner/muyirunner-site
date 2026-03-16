@@ -1,5 +1,4 @@
 -- Supabase 生产基线对账脚本
--- 项目 ref: bioiuugzafoltdbwzpic
 -- 审计时间: 2026-03-17
 --
 -- 用途：
