@@ -1,5 +1,8 @@
 # Directus CMS 手动部署指南（针对慢速服务器）
 
+> 说明：这是历史/备用方案文档，用于记录曾考虑过的 Directus 部署路线，不代表当前生产主链路。
+
+
 ## 📌 背景
 
 由于服务器响应较慢，自动化脚本可能会超时。本指南提供分步手动部署方法。
@@ -64,7 +67,7 @@ SECRET=change-this-to-another-random-secret-xyz987654321
 
 # 管理员账号
 ADMIN_EMAIL=admin@muyirunner.icu
-ADMIN_PASSWORD=Admin123456
+ADMIN_PASSWORD=your-admin-password
 
 # 服务器配置
 PORT=8055
@@ -234,7 +237,7 @@ curl http://localhost:8055/server/health
 1. **访问管理后台**：https://muyirunner.icu/admin
 2. **登录信息**：
    - Email: `admin@muyirunner.icu`
-   - Password: `Admin123456`
+   - Password: `your-admin-password`
 
 3. **创建数据模型**（见下一节）
 
